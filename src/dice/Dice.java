@@ -20,9 +20,14 @@ public class Dice {
 		// returns a random number 1,2,3,4,5,or 6
 		spots = generator.nextInt(6) + 1;
 	}
-
-	//write a method to determine if two Dice objects are equals
 	
+	//write a method to determine if two Dice objects are equals
+	public boolean isEquals(Dice other){
+		return this.spots==other.spots;
+	}
 	//write a method that prints a Die
-
+	public String toString(){
+		return "" +this.spots;
+	}
+	
 }
